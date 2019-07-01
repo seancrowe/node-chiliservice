@@ -1,2 +1,2 @@
-module.exports.ChiliServer = require('./lib/chiliserver.js');
+module.exports.ChiliConnector = require('./lib/chiliconnector.js');
 

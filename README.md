@@ -3,19 +3,23 @@ ChiliService
 
 A small library that allows you to easily make web service calls to your CHILI Server
 
+This module was developed for servers running CHILI Publisher >5.4
+
+It will work with old CHILI installs, but some functions (like DocumentProcessServerSide) will cause a "Error! Function does not exist" error.
+
 ## Installation
 
-  `npm install soap-chiliservice`
+  `npm install chiliservice`
 
 ## Usage
 
-    let ChiliSerivce = require('soap-chiliservice');
+    let cs = require('chiliservice');
 
-    let chiliService = new ChiliService("http://www.crowe.chili/5.5/main.asmx?wsdl");
+    let connector = new cs.ChiliConnector("http://www.crowe.chili/5.5/main.asmx?wsdl");
     
     async function Main() {
         try {
-            let apiKey = (await cs.GenerateApiKeyAsync("admin", "admin", "admin")).key;
+            let apiKey = (await connector.GenerateApiKeyAsync("admin", "admin", "admin")).key;
 
             console.log(apiKey);
         }
@@ -25,7 +29,7 @@ A small library that allows you to easily make web service calls to your CHILI S
         }
     }
   
-  Output should be an apiKey or an error if you had the wrong password of username
+  Output should be an apiKey or an error if you had the wrong info
 
 
 ## Contributing
