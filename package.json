@@ -1,6 +1,6 @@
 {
   "name": "chiliservice",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Easy to use class wrapping around soap-node to call web service functions for CHILI Publish",
   "main": "main.js",
   "repository": {
