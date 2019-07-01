@@ -1,0 +1,29 @@
+{
+  "name": "chiliservice",
+  "version": "0.1.0",
+  "description": "Easy to use class wrapping around soap-node to call web service functions for CHILI Publish",
+  "main": "main.js",
+  "scripts": {
+    "test": "chiliservice"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seancrowe/node-chiliservice.git"
+  },
+  "keywords": [
+    "chili",
+    "chili",
+    "publish",
+    "chilipublish"
+  ],
+  "author": "Sean Crowe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seancrowe/node-chiliservice/issues"
+  },
+  "homepage": "https://github.com/seancrowe/node-chiliservice#readme",
+  "dependencies": {
+    "fast-xml-parser": "^3.12.16",
+    "soap": "^0.28.0"
+  }
+}
